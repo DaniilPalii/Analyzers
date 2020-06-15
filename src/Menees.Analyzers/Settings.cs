@@ -121,7 +121,7 @@
 		/// </summary>
 		public int TabSize { get; } = 4;
 
-		public int MaxLineColumns { get; } = 160;
+		public int MaxLineColumns { get; } = 140;
 
 		public int MaxMethodLines { get; } = 120;
 

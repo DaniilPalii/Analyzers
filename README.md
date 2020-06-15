@@ -1,6 +1,6 @@
 ![windows build & test](https://github.com/menees/Analyzers/workflows/windows%20build%20&%20test/badge.svg) [![Nuget](https://img.shields.io/nuget/v/Menees.Analyzers)](https://www.nuget.org/packages/Menees.Analyzers/)
 
-# Analyzers 
+# Analyzers
 
 This project provides several new C# code analysis rules for Visual Studio 2015 and later. These rules can be used standalone, or they can be used with other analyzers like [StyleCopAnalyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) and [Code-Cracker](https://github.com/code-cracker/code-cracker).
 
@@ -11,7 +11,7 @@ This software is CharityWare. If you use it, I ask that you donate something to 
 | ID  | Title | Comment |
 | ------ | ----------------------------------- | --- |
 | MEN001 | Tabs should be used for indentation | Ensures tabs are used for indentation instead of spaces. This is the _opposite_ of StyleCop's [SA1027: TabsMustNotBeUsed](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1027.md) rule. This is similar to the StyleCop+ rule [SP2001: CheckAllowedIndentationCharacters](https://stylecopplus.codeplex.com/#MoreCustomRules) when set to "Tabs only".<br><br>This rule is off by default because it conflicts with Visual Studio's default settings, which use spaces instead of tabs for indentation. This rule can be enabled using a custom ruleset file, and it includes a code fix provider.  |
-| MEN002 | Line is too long  | Ensures that lines are not longer than 160 characters. This is similar to the StyleCop+ rule [SP2100: CodeLineMustNotBeLongerThan](https://stylecopplus.codeplex.com/#MoreCustomRules). The MaxLineColumns and TabSize values for this rule can be configured in Menees.Analyzers.Settings.xml. |
+| MEN002 | Line is too long  | Ensures that lines are not longer than 140 characters. This is similar to the StyleCop+ rule [SP2100: CodeLineMustNotBeLongerThan](https://stylecopplus.codeplex.com/#MoreCustomRules). The MaxLineColumns and TabSize values for this rule can be configured in Menees.Analyzers.Settings.xml. |
 | MEN003 | Method is too long | Ensures that methods are not longer than 120 lines. This is similar to the StyleCop+ rule [SP2101: MethodMustNotContainMoreLinesThan](https://stylecopplus.codeplex.com/#MoreCustomRules). The MaxMethodLines limit for this rule can be configured in Menees.Analyzers.Settings.xml.  |
 | MEN004 | Property accessor is too long | Ensures that property accessors are not longer than 80 lines. This is similar to the StyleCop+ rule [SP2102: PropertyMustNotContainMoreLinesThan](https://stylecopplus.codeplex.com/#MoreCustomRules). The MaxPropertyAccessorLines limit for this rule can be configured in Menees.Analyzers.Settings.xml. |
 | MEN005 | File is too long  | Ensures that files are not longer than 2000 lines. This is similar to the StyleCop+ rule [SP2103: FileMustNotContainMoreLinesThan](https://stylecopplus.codeplex.com/#MoreCustomRules). The MaxFileLines limit for this rule can be configured in Menees.Analyzers.Settings.xml. |
